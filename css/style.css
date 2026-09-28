@@ -471,3 +471,91 @@ footer {
     }
 
 }
+
+/* ACESSIBILIDADE */
+
+.pular-conteudo {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+}
+
+.pular-conteudo:focus {
+    left: var(--espaco-normal);
+    top: var(--espaco-normal);
+
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+
+    padding: var(--espaco-normal);
+    border-radius: 8px;
+
+    z-index: 2000;
+}
+
+a:focus-visible,
+button:focus-visible,
+.botao-modal:focus-visible,
+.fechar-modal:focus-visible {
+    outline: 3px solid var(--azul-claro);
+    outline-offset: 3px;
+}
+
+
+/* MODO DE ALTO CONTRASTE */
+
+.botao-contraste {
+    margin-left: var(--espaco-normal);
+}
+
+body.alto-contraste {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste .submenu {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste section,
+body.alto-contraste fieldset,
+body.alto-contraste .modal-conteudo {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste legend {
+    color: #FFFFFF;
+}
+
+body.alto-contraste nav a,
+body.alto-contraste .submenu a {
+    color: #FFD700;
+}
+
+body.alto-contraste button,
+body.alto-contraste .botao-modal,
+body.alto-contraste .fechar-modal {
+    background-color: #FFD700;
+    color: #000000;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste input {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #FFD700;
+}
+
+body.alto-contraste a:focus-visible,
+body.alto-contraste button:focus-visible,
+body.alto-contraste input:focus-visible {
+    outline: 3px solid #FFD700;
+    outline-offset: 3px;
+}

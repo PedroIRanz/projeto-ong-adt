@@ -12,6 +12,10 @@
 
 <body>
 
+    <a href="#app" class="pular-conteudo">
+        Pular para o conteúdo
+    </a>
+
     <header>
 
         <h1>ADT - Amigos da Tesoura</h1>
@@ -28,7 +32,15 @@
             ☰
         </label>
 
-        <nav>
+        <button
+            type="button"
+            id="alternar-contraste"
+            class="botao-contraste"
+            aria-pressed="false">
+            Alto contraste
+        </button>
+
+        <nav aria-label="Navegação principal">
 
             <a href="#inicio">
                 INÍCIO
@@ -67,7 +79,7 @@
     </header>
 
 
-    <main id="app"></main>
+    <main id="app" tabindex="-1"></main>
 
 
     <footer>

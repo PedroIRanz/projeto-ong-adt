@@ -1,0 +1,25 @@
+{
+  "name": "projeto-ong",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para a disciplina de Desenvolvimento Front-end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroIRanz/projeto-ong-adt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroIRanz/projeto-ong-adt/issues"
+  },
+  "homepage": "https://github.com/PedroIRanz/projeto-ong-adt#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
