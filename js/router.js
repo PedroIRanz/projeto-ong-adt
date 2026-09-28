@@ -106,4 +106,7 @@ export function carregarPagina() {
     if (menuToggle) {
         menuToggle.checked = false;
     }
+
+
+    app.focus();
 }
